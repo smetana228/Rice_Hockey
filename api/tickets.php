@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="description" content="Rice Hockey Club - Buy Tickets">
 <meta name="google-site-verification" content="https://smetana228.github.io/"/>
-<?php include '../lib/module/sys-meta.php';?>
+<?php include __DIR__ . '/../lib/module/sys-meta.php';?>
 <meta property="og:title" content="Rice Hockey Club - Tickets" />
 <meta property="og:description" content="Buy tickets for Rice Hockey Club events" />
 <meta property="og:image:width" content="1200" />
@@ -15,11 +15,11 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Rice Hockey Club" />
 
-<?php include '../lib/module/sys-css.php';?>
-<?php include '../lib/module/sys-js.php';?>
+<?php include __DIR__ . '/../lib/module/sys-css.php';?>
+<?php include __DIR__ . '/../lib/module/sys-js.php';?>
 </head>
 <body>
-<?php include '../lib/module/sys-php.php';?>
+<?php include __DIR__ . '/../lib/module/sys-php.php';?>
 <div class="page-con-content">
 	<div class="banner-con-container darkmode-header">
 		<div id="object-particles">
@@ -145,7 +145,7 @@
 			</div>
 		</div>
 	</div>
-<?php include '../lib/module/inc-attribution.php';?>
+<?php include __DIR__ . '/../lib/module/inc-attribution.php';?>
 </div>
 </body>
 </html>
