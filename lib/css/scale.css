@@ -282,8 +282,14 @@
 		display: block !important;
 	}
 	.landing-tx1-heading {
-		font-size: 32px;
-		line-height: 46px;
+		display: flex;
+		justify-content: center;
+	}
+	.landing-con-left {
+		position: relative;
+		left: 10px;
+		width: 100%;
+		margin: 0 auto;
 	}
 	.landing-btn-download {
 		margin-left: 26px;
