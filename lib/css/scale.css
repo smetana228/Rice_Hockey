@@ -337,9 +337,9 @@
 	}
 	.menu-ico-logo {
 		height: 70px;
-		width: 140px;
-		background: url("/img/icons/menu/logo-wide-light.png") center center / 36px no-repeat;
-		background-size: contain;
+		width: 100px;
+		background: url("/img/icons/menu/logo.png")  / 18px;
+		background-size: 50%;
 	}
 	.support-ico-menu {
 		height: 100px;

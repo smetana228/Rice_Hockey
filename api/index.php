@@ -48,10 +48,7 @@
 			<div class="content-con-inside">
 				<div class='landing-con-left content-expand '>
 					<div class="landing-con-container scale-content-txt-1 fade-in-onload">
-						<div class='landing-ico-logo'>
-						</div>
 						<div class='landing-tx1-heading'>
-							
 						<img src="/img/icons/menu/logo-wide-light.png" alt="Rice Hockey Club" class ="landing-logo-img">
 						</div>
 					</div>
