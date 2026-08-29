@@ -37,7 +37,7 @@ function h($s) { return htmlspecialchars((string) $s, ENT_QUOTES, 'UTF-8'); }
 <meta property="og:site_name" content="Rice Hockey Club" />
 
 <?php include __DIR__ . '/../lib/module/sys-css.php';?>
-<link rel="stylesheet" type="text/css" href="/lib/css/live.css?v1"/>
+<link rel="stylesheet" type="text/css" href="<?= asset_v('/lib/css/live.css') ?>"/>
 <?php include __DIR__ . '/../lib/module/sys-js.php';?>
 </head>
 <body class="live-page">
@@ -136,6 +136,6 @@ function h($s) { return htmlspecialchars((string) $s, ENT_QUOTES, 'UTF-8'); }
 
 <script>window.RH_LIVE_BOOTSTRAP = <?= $bootstrap ?>;</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<script src="/lib/js/live.js?v1"></script>
+<script src="<?= asset_v('/lib/js/live.js') ?>"></script>
 </body>
 </html>

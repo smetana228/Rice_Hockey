@@ -12,6 +12,7 @@
  */
 
 require_once __DIR__ . '/../lib/module/sys-live.php';
+require_once __DIR__ . '/../lib/module/sys-asset.php';
 
 header('Cache-Control: no-store');
 header('X-Robots-Tag: noindex, nofollow');
@@ -99,7 +100,7 @@ function h($s) { return htmlspecialchars((string) $s, ENT_QUOTES, 'UTF-8'); }
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#00297f">
-<link rel="stylesheet" href="/lib/css/live.css?v1"/>
+<link rel="stylesheet" href="<?= asset_v('/lib/css/live.css') ?>"/>
 </head>
 <body class="admin-body">
 
@@ -185,7 +186,7 @@ function h($s) { return htmlspecialchars((string) $s, ENT_QUOTES, 'UTF-8'); }
 		<p class="admin-hint">Public page: <a href="/live.php">/live.php</a></p>
 	</details>
 
-	<script src="/lib/js/live-admin.js?v1"></script>
+	<script src="<?= asset_v('/lib/js/live-admin.js') ?>"></script>
 
 <?php endif; ?>
 

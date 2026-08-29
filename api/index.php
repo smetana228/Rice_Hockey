@@ -18,7 +18,7 @@
 <link rel="preload" as="image" href="/img/graphics/landing/hero-main.webp" fetchpriority="high"/>
 <?php include __DIR__ . '/../lib/module/sys-css.php';?>
 <?php include __DIR__ . '/../lib/module/sys-js.php';?>
-<script data-cfasync="false" src='/lib/js/carousel.js?v=1'></script>
+<script data-cfasync="false" src='<?= asset_v("/lib/js/carousel.js") ?>'></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6161192934701994" crossorigin="anonymous"></script>
 </head>
 <body>
