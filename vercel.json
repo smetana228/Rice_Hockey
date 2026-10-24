@@ -10,8 +10,10 @@
       "headers": { "Cache-Control": "public, max-age=31536000, immutable" },
       "continue": true
     },
+    { "src": "/index(\\.php)?", "status": 308, "headers": { "Location": "/" } },
+    { "src": "/([a-z0-9-]+)\\.php", "status": 308, "headers": { "Location": "/$1" } },
     { "src": "/", "dest": "/api/index.php" },
-    { "src": "/(.*).php", "dest": "/api/$1.php" },
+    { "src": "/([a-z0-9-]+)/?", "dest": "/api/$1.php" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }

@@ -22,7 +22,7 @@ $notice = '';
 
 if (isset($_GET['logout'])) {
     live_clear_cookie();
-    header('Location: /admin.php');
+    header('Location: /admin');
     exit;
 }
 
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } elseif (live_check_password($_POST['password'] ?? '')) {
             live_clear_failures();
             live_issue_cookie();
-            header('Location: /admin.php');
+            header('Location: /admin');
             exit;
         } else {
             live_record_failure();
@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         } elseif ($action === 'clear') {
             if (live_clear()) {
-                header('Location: /admin.php');
+                header('Location: /admin');
                 exit;
             }
             $error = 'Could not reach the store. The game was not cleared.';
@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $fresh['youtube']       = $state['youtube'];
             $fresh['start_at']      = $state['start_at'];
             live_save($fresh);
-            header('Location: /admin.php');
+            header('Location: /admin');
             exit;
         } else {
             $next = live_apply($state, $action, $_POST);
@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             } elseif (!live_save($next)) {
                 $error = 'Could not reach the store. The tap was not recorded.';
             } else {
-                header('Location: /admin.php');
+                header('Location: /admin');
                 exit;
             }
         }
@@ -136,7 +136,7 @@ function mmss($sec) { return sprintf('%d:%02d', intdiv($sec, 60), $sec % 60); }
 
 <?php if (!$authed): ?>
 
-	<form class="admin-login" method="post" action="/admin.php">
+	<form class="admin-login" method="post" action="/admin">
 		<h1>Scorekeeper</h1>
 		<?php if ($error): ?><p class="admin-error"><?= h($error) ?></p><?php endif; ?>
 		<input type="hidden" name="action" value="login">
@@ -163,7 +163,7 @@ function mmss($sec) { return sprintf('%d:%02d', intdiv($sec, 60), $sec % 60); }
 		      data-max="<?= (int) $state['period'] * LIVE_PERIOD_LENGTH ?>"
 		      data-live="<?= $state['status'] === 'live' ? '1' : '0' ?>"
 		      data-running="<?= live_clock_running($state) ? '1' : '0' ?>"></span>
-		<a class="admin-signout" href="/admin.php?logout=1">Sign out</a>
+		<a class="admin-signout" href="/admin?logout=1">Sign out</a>
 	</div>
 
 	<?php if ($error): ?><p class="admin-error"><?= h($error) ?></p><?php endif; ?>
@@ -187,7 +187,7 @@ function mmss($sec) { return sprintf('%d:%02d', intdiv($sec, 60), $sec % 60); }
 					&middot; <?= h($p['infraction']) ?>
 				</span>
 				<span class="admin-pen-left"><?= mmss($p['end_sec'] - $now) ?></span>
-				<form method="post" action="/admin.php" onsubmit="return confirm('End this penalty now?')">
+				<form method="post" action="/admin" onsubmit="return confirm('End this penalty now?')">
 					<input type="hidden" name="csrf" value="<?= h($csrf) ?>">
 					<input type="hidden" name="action" value="penalty_end">
 					<input type="hidden" name="seq" value="<?= (int) $p['seq'] ?>">
@@ -199,7 +199,7 @@ function mmss($sec) { return sprintf('%d:%02d', intdiv($sec, 60), $sec % 60); }
 	<?php endif; ?></div>
 
 	<!-- The two scoring buttons dominate and sit lowest: thumb territory. -->
-	<form class="admin-pad" method="post" action="/admin.php" id="pad">
+	<form class="admin-pad" method="post" action="/admin" id="pad">
 		<input type="hidden" name="csrf" value="<?= h($csrf) ?>">
 		<div class="admin-pad-secondary">
 			<button type="submit" name="action" value="undo" class="btn-undo">Undo</button>
@@ -229,7 +229,7 @@ function mmss($sec) { return sprintf('%d:%02d', intdiv($sec, 60), $sec % 60); }
 	<details class="admin-setup">
 		<summary>Add penalty</summary>
 		<?php if ($state['status'] === 'live'): ?>
-		<form method="post" action="/admin.php">
+		<form method="post" action="/admin">
 			<input type="hidden" name="csrf" value="<?= h($csrf) ?>">
 			<input type="hidden" name="action" value="penalty">
 			<fieldset class="admin-seg">
@@ -265,7 +265,7 @@ function mmss($sec) { return sprintf('%d:%02d', intdiv($sec, 60), $sec % 60); }
 
 	<details class="admin-setup">
 		<summary>Game setup</summary>
-		<form method="post" action="/admin.php">
+		<form method="post" action="/admin">
 			<input type="hidden" name="csrf" value="<?= h($csrf) ?>">
 			<input type="hidden" name="action" value="setup">
 			<label for="opp">Opponent</label>
@@ -284,12 +284,12 @@ function mmss($sec) { return sprintf('%d:%02d', intdiv($sec, 60), $sec % 60); }
 			       placeholder="https://youtube.com/live/...">
 			<button type="submit">Save</button>
 		</form>
-		<form method="post" action="/admin.php" onsubmit="return confirm('Reset the score and clear all events?')">
+		<form method="post" action="/admin" onsubmit="return confirm('Reset the score and clear all events?')">
 			<input type="hidden" name="csrf" value="<?= h($csrf) ?>">
 			<input type="hidden" name="action" value="reset">
 			<button type="submit" class="btn-danger">Reset game</button>
 		</form>
-		<form method="post" action="/admin.php"
+		<form method="post" action="/admin"
 		      onsubmit="return confirm('Clear this game? The live page will show &quot;No game is on right now&quot; until the next game is set up.')">
 			<input type="hidden" name="csrf" value="<?= h($csrf) ?>">
 			<input type="hidden" name="action" value="clear">
@@ -298,8 +298,8 @@ function mmss($sec) { return sprintf('%d:%02d', intdiv($sec, 60), $sec % 60); }
 		<p class="admin-hint"><strong>Reset</strong> zeroes the score but keeps the
 		   opponent, start time and video. <strong>Clear</strong> removes the game
 		   entirely, for after the final.</p>
-		<p class="admin-hint">Public page: <a href="/live.php">/live.php</a><br>
-		   Stream overlay for OBS: <a href="/overlay.php">/overlay.php</a>
+		<p class="admin-hint">Public page: <a href="/live">/live</a><br>
+		   Stream overlay for OBS: <a href="/overlay">/overlay</a>
 		   (Browser Source, 1920&times;1080)</p>
 	</details>
 
