@@ -26,7 +26,7 @@
 			<div class="menu-con-divider">
 			</div>
 
-			<a href='/live.php'>
+			<a href='/live'>
 			<div class="menu-btn-select">
 				<span>Watch Live</span>
 			</div>
@@ -34,7 +34,7 @@
 			<div class="menu-con-divider">
 			</div>
 
-			<a href='/tickets.php'>
+			<a href='/tickets'>
 			<div class="menu-btn-select">
 				<span>Tickets</span>
 			</div>
@@ -49,7 +49,7 @@
 			</a>
 			<div class="menu-con-divider">
 			</div>
-			<a href='/sponsors.php'>
+			<a href='/sponsors'>
 			<div class="menu-btn-select">
 				<span>Sponsors</span>
 			</div>
@@ -84,14 +84,14 @@
 					<span>Instagram</span>
 				</div>
 				</a>
-				<a href="/live.php">
+				<a href="/live">
 				<div class='mobile-menu-btn-icon'>
 				</div>
 				<div class='mobile-menu-btn-select'>
 					<span>Watch Live</span>
 				</div>
 				</a>
-				<a href="/tickets.php">
+				<a href="/tickets">
 				<div class='mobile-menu-btn-icon'>
 				</div>
 				<div class='mobile-menu-btn-select'>
@@ -105,7 +105,7 @@
 					<span>Player Interest</span>
 				</div>
 				</a>
-				<a href='/sponsors.php'>
+				<a href='/sponsors'>
 				<div class='mobile-menu-btn-icon'>
 				</div>
 				<div class='mobile-menu-btn-select'>

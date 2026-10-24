@@ -1,7 +1,7 @@
 <?php
 /*
  * Public live game page. Renders the current state server-side so the first
- * paint is correct with no JavaScript, then polls /score.php to keep it fresh.
+ * paint is correct with no JavaScript, then polls /score to keep it fresh.
  */
 
 require_once __DIR__ . '/../lib/module/sys-live.php';
@@ -94,7 +94,7 @@ function h($s) { return htmlspecialchars((string) $s, ENT_QUOTES, 'UTF-8'); }
 				</div>
 				<div class="live-none" id="live-empty" hidden>
 					<p class="live-none-title">No game is on right now</p>
-					<p class="live-none-sub">Broadcasts go live on game day. Check the <a href="/tickets.php">schedule</a> for upcoming games.</p>
+					<p class="live-none-sub">Broadcasts go live on game day. Check the <a href="/tickets">schedule</a> for upcoming games.</p>
 				</div>
 				<p class="live-stale" id="live-stale" hidden>Connection lost &mdash; retrying.</p>
 			</div>
