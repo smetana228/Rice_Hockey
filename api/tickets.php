@@ -71,6 +71,7 @@
 					</thead>
 
 					<tbody>
+<?php /* Played. Kept for reference; PHP comment so it is not sent to browsers.
 						<tr class='tickets-row' onclick="window.location.href='https://ebank.rice.edu/C21279_ustores/web/product_detail.jsp?PRODUCTID=3113';" style="cursor: pointer;">
 							<td class='tickets-col-date'>October 24, 2026</td>
 							<td class='tickets-col-game'>
@@ -88,6 +89,7 @@
 							</td>
 
 						</tr>
+*/ ?>
 						<tr class='tickets-row'>
 							<td class='tickets-col-date'>November 6, 2026</td>
 							<td class='tickets-col-game'>
