@@ -8,8 +8,8 @@
    Rice is navy rgb(12, 52, 104) by request. It is darker than a chart palette
    would choose (it reads close to ink), which is acceptable here because the
    timeline also separates teams by side and every mark sits beside a label.
-   On the dark card that navy is invisible (1.1:1), so dark mode uses the same
-   hue lifted to a visible lightness instead.
+   Light theme only, matching the rest of the site: there is deliberately no
+   prefers-color-scheme override.
    ========================================================================== */
 
 :root {
@@ -21,18 +21,6 @@
 	--live-opp:       #eb6834;
 	--live-navy:      #012b8f;
 	--live-line:      rgba(0, 0, 0, .10);
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--live-surface: #1a1a19;
-		--live-ink:     #ffffff;
-		--live-ink-2:   #c3c2b7;
-		--live-grid:    rgba(255, 255, 255, .12);
-		--live-rice:    #5087d3; /* the navy's hue, lightened to show */
-		--live-opp:     #d95926;
-		--live-line:    rgba(255, 255, 255, .14);
-	}
 }
 
 /* ---------------------------------------------------------- public page -- */
