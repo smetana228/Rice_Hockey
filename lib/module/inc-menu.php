@@ -42,6 +42,14 @@
 			<div class="menu-con-divider">
 			</div>
 
+			<a href='https://drevdesigns.com/product-category/rice-hockey/' target="_blank">
+			<div class="menu-btn-select">
+				<span>Merch</span>
+			</div>
+			</a>
+			<div class="menu-con-divider">
+			</div>
+
 			<a href='https://docs.google.com/forms/d/e/1FAIpQLSfudHHxrsv2fHstgvaXAiCNxtOvkWhdmcP-WS6AM724A1sbew/viewform' target="_blank">
 			<div class="menu-btn-select">
 				<span>Player Interest</span>
@@ -52,14 +60,6 @@
 			<a href='/sponsors'>
 			<div class="menu-btn-select">
 				<span>Sponsors</span>
-			</div>
-			</a>
-			<div class="menu-con-divider">
-			</div>
-
-			<a href='https://drevdesigns.com/product-category/rice-hockey/' target="_blank">
-			<div class="menu-btn-select">
-				<span>Merch</span>
 			</div>
 			</a>
 		</div>
@@ -104,6 +104,13 @@
 					<span>Tickets</span>
 				</div>
 				</a>
+				<a href="https://drevdesigns.com/product-category/rice-hockey/" target="_blank">
+				<div class='mobile-menu-btn-icon'>
+				</div>
+				<div class='mobile-menu-btn-select'>
+					<span>Merch</span>
+				</div>
+				</a>
 				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfudHHxrsv2fHstgvaXAiCNxtOvkWhdmcP-WS6AM724A1sbew/viewform" target="_blank">
 				<div class='mobile-menu-btn-icon'>
 				</div>
@@ -116,13 +123,6 @@
 				</div>
 				<div class='mobile-menu-btn-select'>
 					<span>Sponsors</span>
-				</div>
-				</a>
-				<a href="https://drevdesigns.com/product-category/rice-hockey/" target="_blank">
-				<div class='mobile-menu-btn-icon'>
-				</div>
-				<div class='mobile-menu-btn-select'>
-					<span>Merch</span>
 				</div>
 				</a>
 
