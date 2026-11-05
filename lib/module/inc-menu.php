@@ -56,6 +56,12 @@
 			</a>
 			<div class="menu-con-divider">
 			</div>
+
+			<a href='https://drevdesigns.com/product-category/rice-hockey/' target="_blank">
+			<div class="menu-btn-select">
+				<span>Merch</span>
+			</div>
+			</a>
 		</div>
 	</div>
 </div>
@@ -112,8 +118,15 @@
 					<span>Sponsors</span>
 				</div>
 				</a>
-				
-				
+				<a href="https://drevdesigns.com/product-category/rice-hockey/" target="_blank">
+				<div class='mobile-menu-btn-icon'>
+				</div>
+				<div class='mobile-menu-btn-select'>
+					<span>Merch</span>
+				</div>
+				</a>
+
+
 			</div>
 		</div>
 	</div>
