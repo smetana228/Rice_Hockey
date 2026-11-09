@@ -71,40 +71,6 @@
 					</thead>
 
 					<tbody>
-						<tr class='tickets-row' onclick="window.location.href='https://ebank.rice.edu/C21279_ustores/web/product_detail.jsp?PRODUCTID=3114';" style="cursor: pointer;">
-							<td class='tickets-col-date'>November 6, 2026</td>
-							<td class='tickets-col-game'>
-								<div class='tickets-game-wrap'>
-									<img class='team-logo' src='/img/uni_logos/rice_logo.webp' alt='Rice' />
-									<span>Rice vs UH</span>
-									<img class='team-logo' src='/img/uni_logos/uh_logo.webp' alt='UH' />
-								</div>
-							</td>
-							<td class='tickets-col-location'>
-								<a class='tickets-location-link' href="https://maps.app.goo.gl/CPz7YzZUNjGv1MGC7" target="_blank" rel="noopener" onclick="event.stopPropagation();">Bellerive Ice Center</a>
-							</td>
-							<td class='tickets-col-chevron'>
-								<div class='content-btn-right'></div>
-							</td>
-
-						</tr>
-						<tr class='tickets-row' onclick="window.location.href='https://ebank.rice.edu/C21279_ustores/web/product_detail.jsp?PRODUCTID=3115';" style="cursor: pointer;">
-							<td class='tickets-col-date'>November 7, 2026</td>
-							<td class='tickets-col-game'>
-								<div class='tickets-game-wrap'>
-									<img class='team-logo' src='/img/uni_logos/rice_logo.webp' alt='Rice' />
-									<span>Rice vs UH</span>
-									<img class='team-logo' src='/img/uni_logos/uh_logo.webp' alt='UH' />
-								</div>
-							</td>
-							<td class='tickets-col-location'>
-								<a class='tickets-location-link' href="https://maps.app.goo.gl/znoEutjuLTYM6Aeb8" target="_blank" rel="noopener" onclick="event.stopPropagation();">Aerodrome Ice Skating Complex</a>
-							</td>
-							<td class='tickets-col-chevron'>
-								<div class='content-btn-right'></div>
-							</td>
-
-						</tr>
 						<tr class='tickets-row' onclick="window.location.href='https://ebank.rice.edu/C21279_ustores/web/product_detail.jsp?PRODUCTID=3118';" style="cursor: pointer;">
 							<td class='tickets-col-date'>February 19, 2027</td>
 							<td class='tickets-col-game'>
@@ -205,6 +171,34 @@
 						</tr>
 					</thead>
 					<tbody>
+						<tr class='tickets-row'>
+							<td class='tickets-col-date'>November 7, 2026</td>
+							<td class='tickets-col-game'>Rice vs UH</td>
+							<td class='tickets-col-location'>Aerodrome Ice Skating Complex</td>
+							<td class='past-col-result'>
+								<div class='result-wrap'>
+									<img class='team-logo' src='/img/uni_logos/rice_logo.webp' alt='Rice' />
+									<span class='result-score'>4 - 9</span>
+									<img class='team-logo' src='/img/uni_logos/uh_logo.webp' alt='UH' />
+
+								</div>
+							</td>
+
+						</tr>
+						<tr class='tickets-row'>
+							<td class='tickets-col-date'>November 6, 2026</td>
+							<td class='tickets-col-game'>Rice vs UH</td>
+							<td class='tickets-col-location'>Bellerive Ice Center</td>
+							<td class='past-col-result'>
+								<div class='result-wrap'>
+									<img class='team-logo' src='/img/uni_logos/rice_logo.webp' alt='Rice' />
+									<span class='result-score'>4 - 3</span>
+									<img class='team-logo' src='/img/uni_logos/uh_logo.webp' alt='UH' />
+
+								</div>
+							</td>
+
+						</tr>
 						<tr class='tickets-row'>
 							<td class='tickets-col-date'>October 24, 2026</td>
 							<td class='tickets-col-game'>Rice vs ETBU</td>
