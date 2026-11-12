@@ -66,6 +66,11 @@
 					</a>
 				</div>
 				<div class='sponsors-logo-wrapper'>
+					<a href="https://drevdesigns.com/" target="_blank" title="Drev Designs">
+						<img src="/img/graphics/sponsor_logos/sponsor2.webp" alt="Drev Designs" class="sponsors-logo">
+					</a>
+				</div>
+				<div class='sponsors-logo-wrapper'>
 					<a href="https://www.hockeydayinhouston.com/" target="_blank" title="Hockey Day in Houston">
 						<img src="/img/graphics/sponsor_logos/sponsor3.webp" alt="Sponsor 3" class="sponsors-logo">
 					</a>
